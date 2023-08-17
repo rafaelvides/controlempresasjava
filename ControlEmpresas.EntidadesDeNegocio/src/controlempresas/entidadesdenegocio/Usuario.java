@@ -3,8 +3,8 @@ package controlempresas.entidadesdenegocio;
 import java.time.LocalDate;
 public class Usuario {
     
-     private String Id;
-     private String IdRol;
+     private int Id;
+     private int IdRol;
      private String Nombre;
      private String Apellido;
      private String login;
@@ -17,7 +17,7 @@ public class Usuario {
     public Usuario() {
     }
 
-    public Usuario(String Id, String IdRol, String Nombre, String Apellido, String login, String Password, byte estatus, LocalDate fechaRegistro, int top_aux, String confirmPassword_aux) {
+    public Usuario(int Id, int IdRol, String Nombre, String Apellido, String login, String Password, byte estatus, LocalDate fechaRegistro, int top_aux, String confirmPassword_aux) {
         this.Id = Id;
         this.IdRol = IdRol;
         this.Nombre = Nombre;
@@ -30,19 +30,19 @@ public class Usuario {
         this.confirmPassword_aux = confirmPassword_aux;
     }
 
-    public String getId() {
+    public int getId() {
         return Id;
     }
 
-    public void setId(String Id) {
+    public void setId(int Id) {
         this.Id = Id;
     }
 
-    public String getIdRol() {
+    public int getIdRol() {
         return IdRol;
     }
 
-    public void setIdRol(String IdRol) {
+    public void setIdRol(int IdRol) {
         this.IdRol = IdRol;
     }
 
@@ -108,6 +108,10 @@ public class Usuario {
 
     public void setConfirmPassword_aux(String confirmPassword_aux) {
         this.confirmPassword_aux = confirmPassword_aux;
+    }
+
+    public void setRol(Rol rol) {
+        throw new UnsupportedOperationException("Not supported yet."); // Generated from nbfs://nbhost/SystemFileSystem/Templates/Classes/Code/GeneratedMethodBody
     }
               
               
